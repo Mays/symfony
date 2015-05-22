@@ -32,7 +32,10 @@ abstract class ManagerRegistry extends AbstractManagerRegistry implements Contai
      */
     protected function getService($name)
     {
-        return $this->container->get($name);
+        if($name != null)
+            return $this->container->get($name);
+        else
+            return null ;
     }
 
     /**
