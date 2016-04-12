@@ -30,7 +30,7 @@ class PropelLogger implements \BasicLogger
     /**
      * @var array
      */
-    protected $queries = array();
+    protected $queries = [];
 
     /**
      * @var Stopwatch
